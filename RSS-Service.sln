@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Console", "RSS-Service-Console\RSS-Service-Console.csproj", "{B6438C15-0638-4BC5-9862-0C30005B538E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-LIB", "RSS-Service-LIB\RSS-Service-LIB.csproj", "{2E2E32FB-9F82-42A9-AE0A-D2FBFEA9903B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-WinService", "RSS-Service-WinService\RSS-Service-WinService.csproj", "{3D43BBE6-E910-464F-A298-70925C219297}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Tests", "RSS-Service-Tests\RSS-Service-Tests.csproj", "{894BCC81-44E3-406F-911E-15931A9668BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Database", "RSS-Service-Database\RSS-Service-Database.csproj", "{18CE7844-40B8-4666-91F3-0947BA559909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Frontend", "RSS-Service-Frontend\RSS-Service-Frontend.csproj", "{ADCBD6C7-3857-45C2-A0D6-5557A1918327}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6438C15-0638-4BC5-9862-0C30005B538E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6438C15-0638-4BC5-9862-0C30005B538E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6438C15-0638-4BC5-9862-0C30005B538E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6438C15-0638-4BC5-9862-0C30005B538E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2E32FB-9F82-42A9-AE0A-D2FBFEA9903B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2E32FB-9F82-42A9-AE0A-D2FBFEA9903B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2E32FB-9F82-42A9-AE0A-D2FBFEA9903B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2E32FB-9F82-42A9-AE0A-D2FBFEA9903B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D43BBE6-E910-464F-A298-70925C219297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D43BBE6-E910-464F-A298-70925C219297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D43BBE6-E910-464F-A298-70925C219297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D43BBE6-E910-464F-A298-70925C219297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894BCC81-44E3-406F-911E-15931A9668BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894BCC81-44E3-406F-911E-15931A9668BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894BCC81-44E3-406F-911E-15931A9668BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894BCC81-44E3-406F-911E-15931A9668BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18CE7844-40B8-4666-91F3-0947BA559909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CE7844-40B8-4666-91F3-0947BA559909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CE7844-40B8-4666-91F3-0947BA559909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CE7844-40B8-4666-91F3-0947BA559909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADCBD6C7-3857-45C2-A0D6-5557A1918327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADCBD6C7-3857-45C2-A0D6-5557A1918327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADCBD6C7-3857-45C2-A0D6-5557A1918327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADCBD6C7-3857-45C2-A0D6-5557A1918327}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E31A548-45C9-43EA-B990-054A9166FB95}
+	EndGlobalSection
+EndGlobal

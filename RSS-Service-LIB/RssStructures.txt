@@ -1,0 +1,8 @@
+﻿main:
+id, titel, date of publication, URL
+
+https://www.nu.nl/rss/Tech = all
+https://www.techrepublic.com/rssfeeds/articles/ = all
+https://www.techvisor.nl/Rss/RssArtikelen/ = no id
+
+
