@@ -3,7 +3,7 @@ using System.ServiceProcess;
 
 namespace RSS_Service_WinService
 {
-    partial class Service : ServiceBase
+    partial class Service
     {
         /// <summary> 
         /// Required designer variable.

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RSS_Service_LIB.Interfaces
 {
-    public interface IStrategy
+    public interface IStrategy<T>
     {
-        void DataWriting();
+        List<T> DataWriting();
     }
 }

@@ -10,6 +10,41 @@ namespace RSS_Service_LIB.Data_Retrieval
 {
     public class RSSDataWriter
     {
+        public static List<RSS_Service_LIB.ModelsTechVisor.TechVisorRss> TechVisorRSSDataRetrieval()
+        {
+            List<RSS_Service_LIB.ModelsTechVisor.TechVisorRss> storage = new List<RSS_Service_LIB.ModelsTechVisor.TechVisorRss>();
+            string url = "https://www.techrepublic.com/rssfeeds/articles/";
+            XmlReader reader = XmlReader.Create(url);
+            SyndicationFeed feed = SyndicationFeed.Load(reader);
+            reader.Close();
+
+            foreach (SyndicationItem item in feed.Items)
+            {
+                RSS_Service_LIB.ModelsTechVisor.TechVisorRss Model = new RSS_Service_LIB.ModelsTechVisor.TechVisorRss();
+                Model.Channel = new RSS_Service_LIB.ModelsTechVisor.Channel();
+                Model.Channel.Item = new List<RSS_Service_LIB.ModelsTechVisor.Item>();
+                Model.Channel.Item.Add(new RSS_Service_LIB.ModelsTechVisor.Item());
+
+                Model.Channel.Title = item.Title.Text.ToString();
+
+                Model.Channel.Item[0].PubDate = item.PublishDate.ToString();
+
+                Model.Channel.Link = item.Links[0].Uri.ToString();
+
+                storage.Add(Model);
+
+            }
+            RSS_Service_LIB.ModelsTechVisor.TechVisorRss TestModel = storage[0];
+
+            return storage;
+
+            Console.WriteLine("TITLE :" + TestModel.Channel.Title);
+            Console.WriteLine("DATE :" + TestModel.Channel.Item[0].PubDate);
+            Console.WriteLine("URL :" + TestModel.Channel.Link);
+            Console.WriteLine("");
+        }
+
+
         public static List<RSS_Service_LIB.ModelsNu.NuRss> NuRSSDataRetrieval()
         {
             List<RSS_Service_LIB.ModelsNu.NuRss> storage = new List<RSS_Service_LIB.ModelsNu.NuRss>();

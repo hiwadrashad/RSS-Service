@@ -1,4 +1,7 @@
-﻿using System;
+﻿using RSS_Service_LIB.Data_Retrieval;
+using RSS_Service_LIB.Interfaces;
+using RSS_Service_LIB.ModelsNu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,62 +9,47 @@ using System.Threading.Tasks;
 
 namespace RSS_Service_LIB.Strategies
 {
-    public class RSSDataRetrievalStrategy
+    public class RSSDataRetrievalStrategy<T>
     {
 
-        private IStrategy _strategy;
+        private IStrategy<T> _strategy;
 
         public RSSDataRetrievalStrategy()
         { }
-        public RSSDataRetrievalStrategy(IStrategy strategy)
+        public RSSDataRetrievalStrategy(IStrategy<T> strategy)
         {
             this._strategy = strategy;
         }
 
-        public void SetStrategy(IStrategy strategy)
+        public void SetStrategy(IStrategy<T> strategy)
         {
             this._strategy = strategy;
         }
 
-        public void DoSomeBusinessLogic()
+        public List<T> ReturnRSSData()
         {
-            var result = this._strategy.DoAlgorithm(new List<string> { "a", "b", "c", "d", "e" });
+            return (dynamic)this._strategy.DataWriting();
 
-            string resultStr = string.Empty;
-            foreach (var element in result as List<string>)
-            {
-                resultStr += element + ",";
-            }
-
-            Console.WriteLine(resultStr);
         }
     }
 
-    public interface IStrategy
+    class ConcreteStrategyA <T> : IStrategy<T>
     {
-        object DoAlgorithm(object data);
-    }
-
-    class ConcreteStrategyA : IStrategy
-    {
-        public object DoAlgorithm(object data)
+        public List<T> DataWriting()
         {
-            var list = data as List<string>;
-            list.Sort();
-
-            return list;
+            return (dynamic)RSSDataWriter.NuRSSDataRetrieval();
         }
     }
 
-    class ConcreteStrategyB : IStrategy
-    {
-        public object DoAlgorithm(object data)
-        {
-            var list = data as List<string>;
-            list.Sort();
-            list.Reverse();
+    //class ConcreteStrategyB : IStrategy
+    //{
+    //    public object DoAlgorithm(object data)
+    //    {
+    //        var list = data as List<string>;
+    //        list.Sort();
+    //        list.Reverse();
 
-            return list;
-        }
-    }
+    //        return list;
+    //    }
+    //}
 }

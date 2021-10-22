@@ -73,7 +73,7 @@ namespace RSS_Service_LIB.ModelsTechVisor
 		public string Description { get; set; }
 
 		[XmlElement(ElementName = "pubDate")]
-		public DateTime PubDate { get; set; }
+		public string PubDate { get; set; }
 
 		[XmlElement(ElementName = "enclosure")]
 		public Enclosure Enclosure { get; set; }
@@ -105,7 +105,7 @@ namespace RSS_Service_LIB.ModelsTechVisor
 		public string Id { get; set; }
 
 		[XmlElement(ElementName = "link")]
-		public List<Link> Link { get; set; }
+		public string Link { get; set; }
 
 		[XmlElement(ElementName = "item")]
 		public List<Item> Item { get; set; }

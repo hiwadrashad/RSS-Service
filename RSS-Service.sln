@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Tests", "RSS-Se
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Database", "RSS-Service-Database\RSS-Service-Database.csproj", "{18CE7844-40B8-4666-91F3-0947BA559909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Frontend", "RSS-Service-Frontend\RSS-Service-Frontend.csproj", "{ADCBD6C7-3857-45C2-A0D6-5557A1918327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Frontend", "RSS-Service-Frontend\RSS-Service-Frontend.csproj", "{ADCBD6C7-3857-45C2-A0D6-5557A1918327}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

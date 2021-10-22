@@ -14,4 +14,8 @@
     <ProjectReference Include="..\RSS-Service-LIB\RSS-Service-LIB.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+
 </Project>
