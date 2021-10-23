@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RSS-Service-WinService")]
+[assembly: AssemblyTitle("RSS-Service-Windows-Service")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RSS-Service-WinService")]
+[assembly: AssemblyProduct("RSS-Service-Windows-Service")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3d43bbe6-e910-464f-a298-70925c219297")]
+[assembly: Guid("ff056afd-351a-422b-a14d-2b1db1cd3ef0")]
 
 // Version information for an assembly consists of the following four values:
 //

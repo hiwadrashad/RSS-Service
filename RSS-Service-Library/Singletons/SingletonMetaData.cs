@@ -1,11 +1,11 @@
-﻿using RSS_Service_LIB.Models;
+﻿using RSS_Service_Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RSS_Service_LIB.Singletons
+namespace RSS_Service_Library.Singletons
 {
     public class SingletonMetaData
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace RSS_Service_LIB.ModelsTechVisor
+namespace RSS_Service_Library.ModelsTechVisor
 {
 
 	[XmlRoot(ElementName = "image")]

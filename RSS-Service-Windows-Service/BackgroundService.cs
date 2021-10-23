@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Hosting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceProcess;
@@ -7,9 +6,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace RSS_Service_WinService
+namespace RSS_Service_Windows_Service
 {
-
     public abstract class BackgroundService : ServiceBase, IDisposable
     {
         private Task _executingTask;

@@ -7,4 +7,12 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Syndication" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj" />
+  </ItemGroup>
+
 </Project>

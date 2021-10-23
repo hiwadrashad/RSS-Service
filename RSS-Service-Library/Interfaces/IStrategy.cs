@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RSS_Service_LIB.Interfaces
+namespace RSS_Service_Library.Interfaces
 {
-    public interface IStrategy<T>
+    public interface IStrategy
     {
-        List<T> DataWriting();
+        List<object> DataWriting();
     }
 }

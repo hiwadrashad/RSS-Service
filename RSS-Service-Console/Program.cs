@@ -4,8 +4,9 @@ using System.ServiceModel.Syndication;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using RSS_Service_LIB.Singletons;
+using RSS_Service_Library.Singletons;
 using System.Linq;
+using RSS_Service_Library.Strategies;
 
 namespace RSS_Service_Console
 {
@@ -15,7 +16,12 @@ namespace RSS_Service_Console
         static void Main(string[] args)
         {
 
-         
+            RSS_Service_Library.Strategies.NuRssStrategy NuStrategyImplementation = new NuRssStrategy();
+            RSSDataRetrievalStrategy Strategy = new RSS_Service_Library.Strategies.RSSDataRetrievalStrategy();
+            Strategy.SetStrategy(NuStrategyImplementation);
+            var returnvalues = Strategy.ReturnRSSData<RSS_Service_Library.ModelsNu.NuRss>();
+            var item = returnvalues[0];
+            Console.WriteLine(item.Channel.Title.ToString());
             
             //List<RSS_Service_LIB.ModelsTechVisor.TechVisorRss> storage = new List<RSS_Service_LIB.ModelsTechVisor.TechVisorRss>();
             //string url = "https://www.techrepublic.com/rssfeeds/articles/";

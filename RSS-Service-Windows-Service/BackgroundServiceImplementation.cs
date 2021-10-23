@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace RSS_Service_WinService
+namespace RSS_Service_Windows_Service
 {
     public class BackgroundServiceImplementation : BackgroundService
     {

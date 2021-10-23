@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace RSS_Service_LIB.ModelsNu
+namespace RSS_Service_Library.ModelsNu
 {
 	[XmlRoot(ElementName = "link")]
 	public class Link

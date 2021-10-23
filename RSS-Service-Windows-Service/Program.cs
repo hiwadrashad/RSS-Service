@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RSS_Service_WinService
+namespace RSS_Service_Windows_Service
 {
     static class Program
     {
@@ -14,7 +14,6 @@ namespace RSS_Service_WinService
         /// </summary>
         static void Main()
         {
-
 #if DEBUG
             Service service = new Service();
             service.OnDebug();

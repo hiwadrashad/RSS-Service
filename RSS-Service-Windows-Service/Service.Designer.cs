@@ -1,7 +1,5 @@
 ﻿
-using System.ServiceProcess;
-
-namespace RSS_Service_WinService
+namespace RSS_Service_Windows_Service
 {
     partial class Service
     {
