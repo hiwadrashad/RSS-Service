@@ -1,11 +1,12 @@
-﻿using System;
+﻿using RSS_Service_Library.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace RSS_Service_Database.MockingDatabase
 {
-    public class MockingRepo
+    public class MockingRepo : IRepository
     {
         private readonly List<RSS_Service_Library.ModelsNu.NuRss> _nuDatabase = new List<RSS_Service_Library.ModelsNu.NuRss>();
         private readonly List<RSS_Service_Library.ModelsTechRepublic.TechRepublicRss> _techRepublicRssDatabase = new List<RSS_Service_Library.ModelsTechRepublic.TechRepublicRss>();
@@ -44,27 +45,23 @@ namespace RSS_Service_Database.MockingDatabase
 
         public void AddToNuDatabse(RSS_Service_Library.ModelsNu.NuRss input)
         {   
-            
-            if (!_nuDatabase.Where(a => a.Text == input.Text).Any())
-            {
+
                 _nuDatabase.Add(input);
-            }
+            
         }
 
         public void AddToTechRepublicDataBase(RSS_Service_Library.ModelsTechRepublic.TechRepublicRss input)
         {
-            if (!_techRepublicRssDatabase.Where(a => a.Text == input.Text).Any())
-            {
+
                 _techRepublicRssDatabase.Add(input);
-            }
+            
         }
 
         public void AddToTechVisorDataBase(RSS_Service_Library.ModelsTechVisor.TechVisorRss input)
         {
-            if (!_techVisorRssdatabase.Where(a => a.Text == input.Text).Any())
-            {
+
                 _techVisorRssdatabase.Add(input);
-            }
+            
         }
     }
 }

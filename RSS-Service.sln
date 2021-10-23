@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Console", "RSS-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Tests", "RSS-Service-Tests\RSS-Service-Tests.csproj", "{894BCC81-44E3-406F-911E-15931A9668BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Database", "RSS-Service-Database\RSS-Service-Database.csproj", "{18CE7844-40B8-4666-91F3-0947BA559909}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Frontend", "RSS-Service-Frontend\RSS-Service-Frontend.csproj", "{ADCBD6C7-3857-45C2-A0D6-5557A1918327}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Library", "RSS-Service-Library\RSS-Service-Library.csproj", "{90A948F1-CA47-480D-B30A-5AE42BA9EDC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Windows-Service", "RSS-Service-Windows-Service\RSS-Service-Windows-Service.csproj", "{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Data-Base", "RSS-Service-Data-Base\RSS-Service-Data-Base.csproj", "{CE145E6A-6BD5-45AD-9FA8-6C962A87F6C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{894BCC81-44E3-406F-911E-15931A9668BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894BCC81-44E3-406F-911E-15931A9668BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894BCC81-44E3-406F-911E-15931A9668BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18CE7844-40B8-4666-91F3-0947BA559909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18CE7844-40B8-4666-91F3-0947BA559909}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18CE7844-40B8-4666-91F3-0947BA559909}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18CE7844-40B8-4666-91F3-0947BA559909}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ADCBD6C7-3857-45C2-A0D6-5557A1918327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ADCBD6C7-3857-45C2-A0D6-5557A1918327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADCBD6C7-3857-45C2-A0D6-5557A1918327}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE145E6A-6BD5-45AD-9FA8-6C962A87F6C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE145E6A-6BD5-45AD-9FA8-6C962A87F6C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE145E6A-6BD5-45AD-9FA8-6C962A87F6C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE145E6A-6BD5-45AD-9FA8-6C962A87F6C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

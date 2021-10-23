@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RSS-Service-Console\RSS-Service-Console.csproj" />
-    <ProjectReference Include="..\RSS-Service-Database\RSS-Service-Database.csproj" />
     <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj" />
   </ItemGroup>
 
