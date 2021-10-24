@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,8 +69,10 @@ namespace RSS_Service_Library.ModelsTechRepublic
 		[XmlRoot(ElementName = "item")]
 		public class Item
 		{
+      		[NotMapped]
 
-			[XmlElement(ElementName = "guid")]
+		    [XmlElement(ElementName = "guid")]
+
 			public Guid Guid { get; set; }
 
 			[XmlElement(ElementName = "link")]
@@ -84,7 +88,8 @@ namespace RSS_Service_Library.ModelsTechRepublic
 			public string PubDate { get; set; }
 
 			[XmlElement(ElementName = "credit")]
-			public Credit Credit { get; set; }
+		[NotMapped]
+		public Credit Credit { get; set; }
 
 			[XmlElement(ElementName = "doctype")]
 			public string Doctype { get; set; }
@@ -125,15 +130,19 @@ namespace RSS_Service_Library.ModelsTechRepublic
 			public int Ttl { get; set; }
 
 			[XmlElement(ElementName = "image")]
-			public Image Image { get; set; }
+		[NotMapped]
+		public Image Image { get; set; }
 
 			[XmlElement(ElementName = "category")]
 			public string Category { get; set; }
 
 			[XmlElement(ElementName = "counts")]
-			public Counts Counts { get; set; }
+		[NotMapped]
+		public Counts Counts { get; set; }
+		[NotMapped]
 
-			[XmlElement(ElementName = "item")]
+		[XmlElement(ElementName = "item")]
+
 			public List<Item> Item { get; set; }
 		}
 
@@ -141,7 +150,11 @@ namespace RSS_Service_Library.ModelsTechRepublic
 		public class TechRepublicRss
 		{
 
-			[XmlElement(ElementName = "channel")]
+		[Key]
+		public int Id { get; set; }
+		[NotMapped]
+
+		[XmlElement(ElementName = "channel")]
 			public Channel Channel { get; set; }
 
 			[XmlAttribute(AttributeName = "media")]

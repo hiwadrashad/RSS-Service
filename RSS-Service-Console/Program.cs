@@ -7,6 +7,10 @@ using System.Reflection;
 using RSS_Service_Library.Singletons;
 using System.Linq;
 using RSS_Service_Library.Strategies;
+using RSS_Service_Library.ModelsNu;
+using RSS_Service_Data_Base;
+using RSS_Service_Data_Base.Database;
+using RSS_Service_Data_Base.Repositories;
 
 namespace RSS_Service_Console
 {
@@ -15,13 +19,17 @@ namespace RSS_Service_Console
     {
         static void Main(string[] args)
         {
+            NuRss model = new NuRss();
+            model.Text = "sometext";
+            RssDbContextRepository Repo = RssDbContextRepository.GetSingleton();
+            Repo.AddNuRss(model);
 
-            RSS_Service_Library.Strategies.NuRssStrategy NuStrategyImplementation = new NuRssStrategy();
-            RSSDataRetrievalStrategy Strategy = new RSS_Service_Library.Strategies.RSSDataRetrievalStrategy();
-            Strategy.SetStrategy(NuStrategyImplementation);
-            var returnvalues = Strategy.ReturnRSSData<RSS_Service_Library.ModelsNu.NuRss>();
-            var item = returnvalues[0];
-            Console.WriteLine(item.Channel.Title.ToString());
+            //RSS_Service_Library.Strategies.NuRssStrategy NuStrategyImplementation = new NuRssStrategy();
+            //RSSDataRetrievalStrategy Strategy = new RSS_Service_Library.Strategies.RSSDataRetrievalStrategy();
+            //Strategy.SetStrategy(NuStrategyImplementation);
+            //var returnvalues = Strategy.ReturnRSSData<RSS_Service_Library.ModelsNu.NuRss>();
+            //var item = returnvalues[0];
+            //Console.WriteLine(item.Channel.Title.ToString());
             
             //List<RSS_Service_LIB.ModelsTechVisor.TechVisorRss> storage = new List<RSS_Service_LIB.ModelsTechVisor.TechVisorRss>();
             //string url = "https://www.techrepublic.com/rssfeeds/articles/";

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,6 +77,7 @@ namespace RSS_Service_Library.ModelsTechVisor
 		[XmlElement(ElementName = "pubDate")]
 		public string PubDate { get; set; }
 
+		[NotMapped]
 		[XmlElement(ElementName = "enclosure")]
 		public Enclosure Enclosure { get; set; }
 	}
@@ -99,6 +102,7 @@ namespace RSS_Service_Library.ModelsTechVisor
 		public string Generator { get; set; }
 
 		[XmlElement(ElementName = "image")]
+		[NotMapped]
 		public Image Image { get; set; }
 
 		[XmlElement(ElementName = "id")]
@@ -108,13 +112,17 @@ namespace RSS_Service_Library.ModelsTechVisor
 		public string Link { get; set; }
 
 		[XmlElement(ElementName = "item")]
+		[NotMapped]
+
 		public List<Item> Item { get; set; }
 	}
 
 	[XmlRoot(ElementName = "rss")]
 	public class TechVisorRss
 	{
-
+		[Key]
+		public int Id { get; set; }
+		[NotMapped]
 		[XmlElement(ElementName = "channel")]
 		public Channel Channel { get; set; }
 

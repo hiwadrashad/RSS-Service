@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RSS-Service-Data-Base\RSS-Service-Data-Base.csproj" />
     <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj" />
   </ItemGroup>
 

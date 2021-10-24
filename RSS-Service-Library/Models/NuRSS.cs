@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +54,7 @@ namespace RSS_Service_Library.ModelsNu
 	[XmlRoot(ElementName = "item")]
 	public class Item
 	{
+		[NotMapped]
 
 		[XmlElement(ElementName = "category")]
 		public List<string> Category { get; set; }
@@ -75,9 +78,13 @@ namespace RSS_Service_Library.ModelsNu
 		public string PubDate { get; set; }
 
 		[XmlElement(ElementName = "guid")]
+		[NotMapped]
+
 		public Guid Guid { get; set; }
 
 		[XmlElement(ElementName = "enclosure")]
+		[NotMapped]
+
 		public Enclosure Enclosure { get; set; }
 	}
 
@@ -87,7 +94,7 @@ namespace RSS_Service_Library.ModelsNu
 
 		[XmlElement(ElementName = "title")]
 		public string Title { get; set; }
-
+		[NotMapped]
 		[XmlElement(ElementName = "link")]
 		public List<string> Link { get; set; }
 
@@ -108,16 +115,22 @@ namespace RSS_Service_Library.ModelsNu
 
 		[XmlElement(ElementName = "logo")]
 		public string Logo { get; set; }
+		[NotMapped]
 
 		[XmlElement(ElementName = "item")]
+
 		public List<Item> Item { get; set; }
 	}
 
 	[XmlRoot(ElementName = "rss")]
 	public class NuRss
 	{
+		[Key]
+		public int Id { get; set; }
 
 		[XmlElement(ElementName = "channel")]
+		[NotMapped]
+
 		public Channel Channel { get; set; }
 
 		[XmlAttribute(AttributeName = "version")]

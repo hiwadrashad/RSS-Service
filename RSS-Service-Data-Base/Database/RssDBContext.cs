@@ -16,7 +16,13 @@ namespace RSS_Service_Data_Base.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer(@"Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;User ID=itv-admin;Initial Catalog=msdb;Data Source=LAPTOP-1128");
+            builder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=RSSFeed;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        }
+
+        public void AddNuRss(NuRss input)
+        {
+            NuDatabase.Add(input);
+            
         }
 
     }
