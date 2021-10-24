@@ -29,13 +29,33 @@ namespace RSS_Service_Frontend
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.itemlist = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // itemlist
+            // 
+            this.itemlist.FormattingEnabled = true;
+            this.itemlist.ItemHeight = 15;
+            this.itemlist.Location = new System.Drawing.Point(185, 76);
+            this.itemlist.Name = "itemlist";
+            this.itemlist.Size = new System.Drawing.Size(577, 334);
+            this.itemlist.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.itemlist);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox itemlist;
     }
 }
 

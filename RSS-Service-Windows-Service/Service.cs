@@ -17,7 +17,7 @@ namespace RSS_Service_Windows_Service
     public partial class Service : ServiceBase
     {
 
-        IRepository database = RSS_Service_Database.MockingDatabase.MockingRepo.GetMockingRepo();
+        IRepository database = RSS_Service_Data_Base.MockingDatabase.MockingRepo.GetMockingRepo();
         public Service()
         {
             InitializeComponent();

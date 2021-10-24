@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RSS_Service_Data_Base.MockingDatabase
+namespace RSS_Service_Database.MockingDatabase
 {
     public class MockingRepo : IRepository
     {
