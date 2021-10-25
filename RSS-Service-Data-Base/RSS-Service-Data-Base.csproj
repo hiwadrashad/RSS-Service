@@ -3,13 +3,18 @@
   <Import Project="..\packages\Microsoft.EntityFrameworkCore.Design.3.1.20\build\net461\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.20\build\net461\Microsoft.EntityFrameworkCore.Design.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{61EBF028-71D8-41AA-BF94-EE2E903F0FCB}</ProjectGuid>
+    <ProjectGuid>{BB53D3CE-8474-4BE0-AA56-DEB8086D7549}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RSS_Service_Data_Base</RootNamespace>
-    <AssemblyName>RSS-Service-Data-Base</AssemblyName>
+    <RootNamespace>Rss_Service_Data_Base</RootNamespace>
+    <AssemblyName>Rss-Service-Data-Base</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -160,9 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\RssDBContext.cs" />
-    <Compile Include="Migrations\20211024164625_initial.cs" />
-    <Compile Include="Migrations\20211024164625_initial.designer.cs">
-      <DependentUpon>20211024164625_initial.cs</DependentUpon>
+    <Compile Include="Migrations\20211025104451_initial.cs" />
+    <Compile Include="Migrations\20211025104451_initial.designer.cs">
+      <DependentUpon>20211025104451_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\RssDBContextModelSnapshot.cs" />
     <Compile Include="MockingDatabase\MockingRepo.cs" />
@@ -170,14 +175,14 @@
     <Compile Include="Repositories\RssDbContextRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj">
-      <Project>{90a948f1-ca47-480d-b30a-5ae42ba9edc6}</Project>
-      <Name>RSS-Service-Library</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj">
+      <Project>{90A948F1-CA47-480D-B30A-5AE42BA9EDC6}</Project>
+      <Name>RSS-Service-Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

@@ -87,10 +87,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RSS-Service-Data-Base\RSS-Service-Data-Base.csproj">
-      <Project>{61ebf028-71d8-41aa-bf94-ee2e903f0fcb}</Project>
-      <Name>RSS-Service-Data-Base</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj">
       <Project>{90a948f1-ca47-480d-b30a-5ae42ba9edc6}</Project>
       <Name>RSS-Service-Library</Name>

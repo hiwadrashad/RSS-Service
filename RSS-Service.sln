@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Console", "RSS-Service-Console\RSS-Service-Console.csproj", "{B6438C15-0638-4BC5-9862-0C30005B538E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Tests", "RSS-Service-Tests\RSS-Service-Tests.csproj", "{894BCC81-44E3-406F-911E-15931A9668BD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Library", "RSS-Service-Library\RSS-Service-Library.csproj", "{90A948F1-CA47-480D-B30A-5AE42BA9EDC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Windows-Service", "RSS-Service-Windows-Service\RSS-Service-Windows-Service.csproj", "{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSS-Service-Frontend", "RSS-Service-Frontend\RSS-Service-Frontend.csproj", "{B5481803-1329-4356-B608-B9FD44C39E82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Console-App", "RSS-Service-Console-App\RSS-Service-Console-App.csproj", "{BBB8D32A-3CB4-492A-8332-7B9B4B22CBC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS-Service-Data-Base", "RSS-Service-Data-Base\RSS-Service-Data-Base.csproj", "{61EBF028-71D8-41AA-BF94-EE2E903F0FCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rss-Service-Data-Base", "Rss-Service-Data-Base\Rss-Service-Data-Base.csproj", "{BB53D3CE-8474-4BE0-AA56-DEB8086D7549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rss-Service-Front-End", "Rss-Service-Front-End\Rss-Service-Front-End.csproj", "{357BB083-D4BC-452B-9BF1-871EF81F1BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rss-Service-Console", "Rss-Service-Console\Rss-Service-Console.csproj", "{CA950273-73E0-4279-8B6F-03A5099E7BDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6438C15-0638-4BC5-9862-0C30005B538E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6438C15-0638-4BC5-9862-0C30005B538E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6438C15-0638-4BC5-9862-0C30005B538E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6438C15-0638-4BC5-9862-0C30005B538E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{894BCC81-44E3-406F-911E-15931A9668BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{894BCC81-44E3-406F-911E-15931A9668BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894BCC81-44E3-406F-911E-15931A9668BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,14 +35,22 @@ Global
 		{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF056AFD-351A-422B-A14D-2B1DB1CD3EF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5481803-1329-4356-B608-B9FD44C39E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5481803-1329-4356-B608-B9FD44C39E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5481803-1329-4356-B608-B9FD44C39E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5481803-1329-4356-B608-B9FD44C39E82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61EBF028-71D8-41AA-BF94-EE2E903F0FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61EBF028-71D8-41AA-BF94-EE2E903F0FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61EBF028-71D8-41AA-BF94-EE2E903F0FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61EBF028-71D8-41AA-BF94-EE2E903F0FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB8D32A-3CB4-492A-8332-7B9B4B22CBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB8D32A-3CB4-492A-8332-7B9B4B22CBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB8D32A-3CB4-492A-8332-7B9B4B22CBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB8D32A-3CB4-492A-8332-7B9B4B22CBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB53D3CE-8474-4BE0-AA56-DEB8086D7549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB53D3CE-8474-4BE0-AA56-DEB8086D7549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB53D3CE-8474-4BE0-AA56-DEB8086D7549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB53D3CE-8474-4BE0-AA56-DEB8086D7549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357BB083-D4BC-452B-9BF1-871EF81F1BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357BB083-D4BC-452B-9BF1-871EF81F1BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357BB083-D4BC-452B-9BF1-871EF81F1BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357BB083-D4BC-452B-9BF1-871EF81F1BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA950273-73E0-4279-8B6F-03A5099E7BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA950273-73E0-4279-8B6F-03A5099E7BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA950273-73E0-4279-8B6F-03A5099E7BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA950273-73E0-4279-8B6F-03A5099E7BDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

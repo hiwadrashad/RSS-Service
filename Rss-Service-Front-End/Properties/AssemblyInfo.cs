@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Rss-Service-Data-Base")]
+[assembly: AssemblyTitle("Rss-Service-Front-End")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Rss-Service-Data-Base")]
+[assembly: AssemblyProduct("Rss-Service-Front-End")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bb53d3ce-8474-4be0-aa56-deb8086d7549")]
+[assembly: Guid("357bb083-d4bc-452b-9bf1-871ef81f1be6")]
 
 // Version information for an assembly consists of the following four values:
 //

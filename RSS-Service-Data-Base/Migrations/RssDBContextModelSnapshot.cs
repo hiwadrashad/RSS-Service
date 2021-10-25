@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RSS_Service_Data_Base.Database;
 
-namespace RSS_Service_Data_Base.Migrations
+namespace Rss_Service_Data_Base.Migrations
 {
     [DbContext(typeof(RssDBContext))]
     partial class RssDBContextModelSnapshot : ModelSnapshot

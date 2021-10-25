@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace RSS_Service_Data_Base.Migrations
+namespace Rss_Service_Data_Base.Migrations
 {
     public partial class initial : Migration
     {

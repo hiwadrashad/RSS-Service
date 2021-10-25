@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RSS_Service_Data_Base.Database;
 
-namespace RSS_Service_Data_Base.Migrations
+namespace Rss_Service_Data_Base.Migrations
 {
     [DbContext(typeof(RssDBContext))]
-    [Migration("20211024164625_initial")]
+    [Migration("20211025104451_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

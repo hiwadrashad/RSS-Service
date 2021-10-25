@@ -1,22 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>RSS_Service_Console</RootNamespace>
+    <RootNamespace>Rss_Service_Console</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="logs\" />
+    <None Remove="logs\log.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.ServiceModel.Syndication" Version="5.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\RSS-Service-Data-Base\RSS-Service-Data-Base.csproj" />
-    <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj" />
+    <Content Include="logs\log.txt" />
   </ItemGroup>
 
 </Project>
