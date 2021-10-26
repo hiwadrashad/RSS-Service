@@ -15,6 +15,8 @@ namespace Rss_Service_Front_End
         public Form1()
         {
             InitializeComponent();
+            
         }
+
     }
 }

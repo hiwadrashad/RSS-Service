@@ -16,7 +16,7 @@ namespace RSS_Service_Data_Base.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Rss-Service;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            builder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Database=Rss-Server; User Id=NTAuthority2;Password=P@ssw0rd;");
         }
 
     }

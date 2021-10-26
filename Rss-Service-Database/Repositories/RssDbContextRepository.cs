@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using RSS_Service_Library.ModelsTechRepublic;
+using RSS_Service_Library.ModelsTechVisor;
 
 namespace RSS_Service_Data_Base.Repositories
 {
@@ -35,6 +37,20 @@ namespace RSS_Service_Data_Base.Repositories
             {
                 _dbContext.NuDatabase.Remove(item);
             }
+            foreach (var item in _dbContext.TechRepublicDatabase)
+            {
+                _dbContext.TechRepublicDatabase.Remove(item);
+            }
+            foreach (var item in _dbContext.TechVisorDatabase)
+            {
+                _dbContext.TechVisorDatabase.Remove(item);
+            }
+            _dbContext.SaveChanges();
+        }
+
+        public void AddTechRepublicRss(TechRepublicRss input)
+        {
+            _dbContext.Add(input);
             _dbContext.SaveChanges();
         }
 
@@ -43,10 +59,25 @@ namespace RSS_Service_Data_Base.Repositories
             _dbContext.Add(input);
             _dbContext.SaveChanges();
         }
+        public void AddTechVisorRss(TechVisorRss input)
+        {
+            _dbContext.Add(input);
+            _dbContext.SaveChanges();
+        }
 
         public List<NuRss> GetNuRssData()
         {
-            return _dbContext.NuDatabase.ToList(); ;
+            return _dbContext.NuDatabase.ToList(); 
         }
+
+        public List<TechRepublicRss> GetTechRepublicRssData()
+        {
+            return _dbContext.TechRepublicDatabase.ToList(); 
+        }
+        public List<TechVisorRss> GetTechVisorRssData()
+        {
+            return _dbContext.TechVisorDatabase.ToList(); ;
+        }
+
     }
 }

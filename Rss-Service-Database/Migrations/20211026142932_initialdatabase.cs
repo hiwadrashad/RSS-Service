@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Rss_Service_Data_Base.Migrations
+namespace Rss_Service_Database.Migrations
 {
-    public partial class initial : Migration
+    public partial class initialdatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -10,13 +10,13 @@ namespace Rss_Service_Data_Base.Migrations
                 name: "NuDatabase",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Version = table.Column<double>(nullable: false),
-                    Atom = table.Column<string>(nullable: true),
-                    Dc = table.Column<string>(nullable: true),
-                    Media = table.Column<string>(nullable: true),
-                    Text = table.Column<string>(nullable: true)
+                    Version = table.Column<double>(type: "float", nullable: false),
+                    Atom = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Dc = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Media = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Text = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -27,14 +27,14 @@ namespace Rss_Service_Data_Base.Migrations
                 name: "TechRepublicDatabase",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Media = table.Column<string>(nullable: true),
-                    Atom = table.Column<string>(nullable: true),
-                    S = table.Column<string>(nullable: true),
-                    Itunes = table.Column<string>(nullable: true),
-                    Version = table.Column<double>(nullable: false),
-                    Text = table.Column<string>(nullable: true)
+                    Media = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Atom = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    S = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Itunes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Version = table.Column<double>(type: "float", nullable: false),
+                    Text = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -45,11 +45,11 @@ namespace Rss_Service_Data_Base.Migrations
                 name: "TechVisorDatabase",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    A10 = table.Column<string>(nullable: true),
-                    Version = table.Column<double>(nullable: false),
-                    Text = table.Column<string>(nullable: true)
+                    A10 = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Version = table.Column<double>(type: "float", nullable: false),
+                    Text = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

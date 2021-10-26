@@ -7,11 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DatabsesPlacements.txt" />
     <None Remove="logs\log.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="DatabsesPlacements.txt" />
     <Content Include="logs\log.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rss-Service-Database\Rss-Service-Database.csproj" />
+    <ProjectReference Include="..\RSS-Service-Library\RSS-Service-Library.csproj" />
   </ItemGroup>
 
 </Project>
