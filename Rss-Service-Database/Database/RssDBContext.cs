@@ -16,7 +16,8 @@ namespace RSS_Service_Data_Base.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Database=Rss-Server; User Id=NTAuthority2;Password=P@ssw0rd;");
+            //builder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Database=Rss-Server; Trusted_Connection=True;");
+            builder.UseSqlServer(@"Database=Rss-Server;Trusted_Connection=True");
         }
 
     }

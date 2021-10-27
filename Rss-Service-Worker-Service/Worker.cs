@@ -68,7 +68,7 @@ namespace Rss_Service_Worker_Service
                 }
                 catch (Exception ex)
                 {
-                    File.AppendAllText(@"E:\Programming\Windows-Service\Logs\" + "log.txt", ex.Message + Environment.NewLine);
+                    File.AppendAllText(@"E:\Programming\Windows-Service\Logs\" + "log.txt", ex.Message  + ex.Data + ex.StackTrace + ex.Source + ex.TargetSite + ex.HResult + ex.HelpLink + ex.InnerException + Environment.NewLine);
                 }
             }
         }
